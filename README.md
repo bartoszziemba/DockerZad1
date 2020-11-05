@@ -1,5 +1,5 @@
 # DockerZad1
-Zadanie na labolatorium Docker
+Zadanie na labolatorium PwChO
 
 # Build instructions
 
