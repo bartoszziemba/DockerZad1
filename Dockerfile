@@ -1,6 +1,7 @@
 FROM alpine:3.12
 WORKDIR /home/blazor/
 RUN wget -o ./dotnet-install.sh https://dot.net/v1/dotnet-install.sh
+RUN chmod u+x ./dotnet-install.sh
 RUN ./dotnet-install.sh
 ADD ./BlazorDocker.tar.gz ./BlazorDocker.tar.gz
 RUN tar -xzf ./BlazorDocker.tar.gz
