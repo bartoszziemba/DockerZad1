@@ -9,10 +9,11 @@ WORKDIR /app
 #RUN chmod u+x ./dotnet-install.sh
 #RUN ./dotnet-install.sh
 ADD Zrodlo.tar.gz ./
-WORKDIR /app/BlazorDocker
+#RUN ls -la
+#WORKDIR /app/BlazorDocker
 RUN ls -la
 RUN dotnet build --configuration:Release
 EXPOSE 5000
 EXPOSE 5001
-WORKDIR /app/BlazorDocker
+#WORKDIR /app/BlazorDocker
 CMD dotnet run --no-build
